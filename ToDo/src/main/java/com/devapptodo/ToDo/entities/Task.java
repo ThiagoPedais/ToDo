@@ -1,6 +1,7 @@
 package com.devapptodo.ToDo.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -23,8 +24,8 @@ public class Task {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
-    private LocalDateTime deadLine;
+   //  @Column(nullable = false)
+   // private LocalDateTime deadLine;
 
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false )
